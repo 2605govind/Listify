@@ -1,0 +1,173 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --box-shadow: rgba(0, 0, 0, 0.45) 2px 4px 8px;
+}
+
+body{
+    background-color: #272343;
+    display: flex;
+    justify-content: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+.box-class {
+    background-color: #FFFFFF;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    /* box-shadow: var(--box-shadow) */
+}
+
+
+.container{
+    max-width: 400px;
+    min-width: 200px;
+    margin: 100px 20px 40px 20px;
+    height: 100%;
+}
+    
+.search-section .search-box{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-section .search-box #search{
+    width: 100%;
+    height: 100%;
+    padding: 8px 29px;
+    border: 1px solid #272343;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+
+.search-section .fa-xmark{
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.search-section .fa-xmark:hover{
+    scale: 1.2;
+    color: rgb(215, 20, 20);
+    transition: 0.1s ease-in;
+}
+    
+.search-section .fa-magnifying-glass{
+    position: absolute;
+    left: 8px;
+    color: gray;
+}
+
+
+
+
+
+
+.current-tasks-list .task-box{
+    display: flex;
+    flex-direction: column;
+    background-color: #ecebf0;
+
+    justify-content: center;
+
+    padding: 20px 10px 20px 10px;
+    border-radius: 5px;
+    border: 1px solid #272343;
+}
+
+.task-box .title-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-box .data-box {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-box .data-box p{
+    font-size: 12px;
+}
+
+.current-tasks-list ul li{
+    margin: 10px 0px;
+}
+
+
+.task-box .task-title{
+    font-size: 16px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.task-box .fa-trash{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.task-box .fa-trash:hover{
+    color: #e74a11;
+}
+
+
+
+
+
+
+
+.add-section {
+    width: 100%;
+}
+
+.add-section .add-box{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.add-section .add-box #add-new-task{
+    width: 100%;
+    height: 100%;
+    padding: 8px 29px 8px 8px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.add-section .add-box .fa-paper-plane{
+    position: absolute;
+    right: 8px;
+    transition: 0.1s ease-in;
+}
+
+.add-section .add-box .fa-paper-plane:hover{
+    color: green;
+    scale: 1.1;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
